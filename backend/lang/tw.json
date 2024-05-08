@@ -1,0 +1,12 @@
+{
+    "Log Name": "日誌名稱",
+    "Activity Logs": "活動日誌",
+    "Activity Log": "日誌",
+    "Description": "描述",
+    "Subject Id": "編號",
+    "Subject Type": "主題類型",
+    "Causer": "操作者",
+    "Causer Ip": "操作者 IP",
+    "Properties": "屬性",
+    "Created At": "建立時間"
+}

@@ -1,0 +1,11 @@
+{
+    "novaMultiselect.maxElements": "選擇上限為 :max 個",
+    "novaMultiselect.noResult": "沒有符合的結果",
+    "novaMultiselect.noOptions": "沒有可選項目",
+    "novaMultiselect.limitText": "內容長度為 :max",
+    "novaMultiselect.placeholder": "提示文字",
+    "novaMultiselect.nItemsSelected": "有 :count 個項目",
+    "novaMultiselect.reorder": "重整",
+    "novaMultiselect.doneReordering": "重整完成",
+    "novaMultiSelect.startTypingForOptions": "輸入文字以進行搜尋"
+}

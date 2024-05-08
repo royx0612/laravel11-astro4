@@ -1,0 +1,11 @@
+{
+    "novaSortable.reorderingDisabledTooltip.activeSort": "已啟用欄位排序，無法手動拖曳排序",
+    "novaSortable.reorderingDisabledTooltip.notAllowed": "此頁面不允許排序",
+    "novaSortable.moveToStart": "移到頂部",
+    "novaSortable.moveToEnd": "移到底部",
+    "novaSortable.reorderSuccessful": "已更換排序",
+    "novaSortable.moveToStartSuccessful": "已移到頂部",
+    "novaSortable.moveToEndSuccessful": "已移到底部",
+    "novaSortable.reorderError": "排序失敗",
+    "novaSortable.reorderNotAllowedFor": "ID :id 不允許排序"
+}

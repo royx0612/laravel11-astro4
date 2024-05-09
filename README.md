@@ -107,24 +107,23 @@
 
 ### 必需的套件
 
-- **Bolechen/nova-activitylog:** 記錄 Nova 中的活動日誌
-- **Darkaonline/l5-swagger:** 使用 Swagger 生成 API 文檔
-- **Laravel/nova:** 用於後端管理的 Nova 面板
-- **Laravel/sanctum:** 驗證與授權
-- **Spatie/laravel-activitylog:** 記錄 Laravel 應用中的活動日誌
-- **Spatie/laravel-medialibrary:** 管理應用的媒體檔案
-- **Ebess/advanced-nova-media-library:** 在 Nova 中使用的媒體檔案
+- **Bolechen/nova-activitylog:** 記錄 Nova 中的活動日誌[連結][https://github.com/bolechen/nova-activitylog]
+- **Darkaonline/l5-swagger:** 使用 Swagger 生成 API 文檔[連結][https://github.com/DarkaOnLine/L5-Swagger]
+- **Laravel/nova:** 用於後台管理的 Nova [連結][https://nova.laravel.com]
+- **Laravel/sanctum:** 驗證與授權[連結][https://laravel.com/docs/11.x/sanctum]
+- **Spatie/laravel-activitylog:** 記錄 Laravel 應用中的活動日誌[連結][https://spatie.be/docs/laravel-activitylog/v4/introduction]
+- **Spatie/laravel-medialibrary:** 管理應用的媒體檔案[連結][https://spatie.be/docs/laravel-medialibrary/v11/introduction]
+- **Ebess/advanced-nova-media-library:** 在 Nova 中使用的媒體檔案[連結][https://github.com/ebess/advanced-nova-media-library]
 
 
 
 ## 啟動指令
 1. Nova 帳號及 Token檔案生成：docker compose run --rm composer config http-basic.nova.laravel.com nova-account-email@domain.com license-key
 2. 後端套件安裝：docker compose run --rm composer --ignore-platform-reqs i 
-3. 後端 Nova 安裝：docker compose run --rm artisan nova:install
-4. 後端資料庫初始化：docker compose run --rm artisan migrate
-5. 後端資料帳號建立：docker compose run --rm artisan nova:user
-6. 前端套件安裝：docker compose run --rm npm i
-7. 啟動並建立 images： docker compose up -d --build
+3. 後端資料庫初始化：docker compose run --rm artisan migrate
+4. 後端資料帳號建立：docker compose run --rm artisan nova:user
+5. 前端套件安裝：docker compose run --rm npm i
+6. 啟動並建立 images： docker compose up -d --build
 
 
 ## 關閉指令

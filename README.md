@@ -81,13 +81,6 @@
 - **卷:** 將 frontend 目錄對應到容器內的 `/app`
 - **入口點:** `npm`
 
-## 使用指南
-
-1. **啟動容器：** 執行 `docker-compose up -d` 啟動所有服務。
-2. **訪問應用：** 在瀏覽器中訪問 `http://localhost` 查看應用。
-3. **訪問 PhpMyAdmin：** 在瀏覽器中訪問 `http://localhost:8891` 管理 MySQL 數據庫。
-4. **管理任務：** 使用 `artisan` 和 `scheduler` 容器管理計畫任務。
-
 ## 卷
 
 - `mysql_data`: 用於持久化存儲 MySQL 數據。
@@ -117,14 +110,23 @@
 
 
 
-## 啟動指令
+## 初始化指令
 1. Nova 帳號及 Token檔案生成：docker compose run --rm composer config http-basic.nova.laravel.com nova-account-email@domain.com license-key
 2. 後端套件安裝：docker compose run --rm composer --ignore-platform-reqs i 
 3. 後端資料庫初始化：docker compose run --rm artisan migrate
 4. 後端資料帳號建立：docker compose run --rm artisan nova:user
 5. 前端套件安裝：docker compose run --rm npm i
-6. 啟動並建立 images： docker compose up -d --build
+6. 啟動並建立 images： docker compose build
 
+
+## 使用指南（務必完成初始化指令）
+
+1. **啟動容器：** 執行 `docker-compose up -d` 啟動所有服務。
+2. **前端網址：** 在瀏覽器中訪問 `http://localhost` 。
+3. **後端網址：** 在瀏覽器中訪問 `http://localhost:8000`。
+4. **後端 Nova 網址：** 在瀏覽器中訪問 `http://localhost:8000/nova`。
+5. **資料庫管理** 在瀏覽器中訪問 `http://localhost:8891` 管理 MySQL 數據庫。
+6. **管理任務：** 使用 `artisan` 和 `scheduler` 容器管理計畫任務。
 
 ## 關閉指令
 docker compose down

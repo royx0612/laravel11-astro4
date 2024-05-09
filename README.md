@@ -118,12 +118,13 @@
 
 
 ## 啟動指令
-1. 啟動並建立 images： docker compose up -d --build
-2. 後端套件安裝：docker compose run --rm compose i
+1. Nova 帳號及 Token檔案生成：docker compose run --rm composer config http-basic.nova.laravel.com nova-account-email@domain.com license-key
+2. 後端套件安裝：docker compose run --rm composer --ignore-platform-reqs i 
 3. 後端 Nova 安裝：docker compose run --rm artisan nova:install
 4. 後端資料庫初始化：docker compose run --rm artisan migrate
 5. 後端資料帳號建立：docker compose run --rm artisan nova:user
 6. 前端套件安裝：docker compose run --rm npm i
+7. 啟動並建立 images： docker compose up -d --build
 
 
 ## 關閉指令
